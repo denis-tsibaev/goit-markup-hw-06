@@ -417,10 +417,56 @@
 	<!-- Модальное окно  -->
 	<!-- не забыть вернуть class="backdrop is-hidden" в бэкдроп -->
 	<div class="backdrop" data-modal>
-		<div class="modal"><button data-modal-close>X</button>
-			<form class="modal-form" action="">
-				<input type="text" name="user-name" required>
-				<input type="tel" name="user-phone" required>
+		<div class="modal">
+			<button class="modal-close-button" data-modal-close>x</button>
+			<form class="form" action="" autocomplete="off">
+				<b>Оставьте свои данные, мы вам перезвоним</b>
+
+				<label class="form-field">
+					<span class="form-label">Имя</span>
+					<input type="text" class="form-input" name="user-name" required>
+					<span class="input-wrapper">
+						<svg class="icon">
+							<use href='./img/symbol-defs.svg#icon-person-black-18dp'></use>
+						</svg>
+					</span>
+				</label>
+
+
+				<label class="form-field">
+					<span class="form-label">Телефон</span>
+					<input type="tel" class="form-input" name="user-phone" required placeholder="">
+					<span class="input-wrapper">
+						<svg class="icon">
+							<use href='./img/symbol-defs.svg#icon-phone-black-18dp'></use>
+						</svg>
+					</span>
+				</label>
+
+
+				<label class="form-field">
+					<span class="form-label">Почта</span>
+					<input type="email" class="form-input" name="user-email">
+					<span class="input-wrapper">
+						<svg class="icon">
+							<use href='./img/symbol-defs.svg#icon-email-black-18dp'></use>
+						</svg>
+					</span>
+				</label>
+
+				<label class="form-field">
+					<span class="form-label">Комментарий</span>
+					<input type="text" class="form-textarea" placeholder="Введите текст">
+				</label>
+
+				<label class="checkbox">
+					<input type="checkbox" name="" value="accepted">
+					<span class="agreement">Соглашаюсь с рассылкой и принимаю<a href="">&nbsp;Условия
+							договора</a></span>
+				</label>
+
+				<button type="submit" class="submit-button">Отправить</button>
+
 			</form>
 		</div>
 	</div>
