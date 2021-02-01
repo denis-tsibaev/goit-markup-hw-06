@@ -378,6 +378,15 @@ h2 {
   cursor: pointer;
 }
 
+.checkbox-input:checked .custom-checkbox {
+  fill: #2196f3;
+}
+
+.custom-checkbox {
+  outline: 2px solid #000;
+  fill: red;
+}
+
 .submit-button {
   display: block;
   margin-left: auto;
