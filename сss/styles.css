@@ -366,7 +366,7 @@ h2 {
 
 .form-textarea {
   height: 120px;
-  /* resize: none; */
+  resize: none;
   padding: 12px 16px;
   margin-top: 4px;
 }
@@ -379,7 +379,8 @@ h2 {
   fill: var(--accent-color);
 }
 
-.form-label:focus-within .form-input {
+.form-label:focus-within .form-input,
+.form-label:focus-within .form-textarea {
   border-color: var(--accent-color);
 }
 
