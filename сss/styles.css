@@ -243,6 +243,13 @@ h2 {
 
   padding: 10px 32px;
   cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  opacity: 1;
 }
 
 /* Модально окно  */
@@ -454,6 +461,13 @@ h2 {
   border-style: none;
   border-radius: 4px;
   cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  opacity: 1;
 }
 
 .input-wrapper {
@@ -531,9 +545,9 @@ h2 {
   justify-content: space-between;
 }
 
-/* .business-list .item {
+.business-list .item {
   width: 370px;
-} */
+}
 
 .business-list h3 {
   font-weight: 700;
@@ -888,6 +902,14 @@ address {
   margin-right: 70px;
 }
 
+.right-side {
+  display: flex;
+}
+
+.footer-block-socialnet {
+  margin-right: 93px;
+}
+
 .footer .right-side h3 {
   font-weight: 700;
   text-transform: uppercase;
@@ -952,6 +974,58 @@ address {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-footer-label {
+  margin-right: 12px;
+}
+
+.form-footer-input {
+  padding: 0;
+  outline-style: none;
+  color: var(--white-color);
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+}
+
+.footer-submit-button {
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  padding: 10px 62px 10px 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline-style: none;
+  border-style: none;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-submit-button:hover,
+.footer-submit-button:focus {
+  opacity: 1;
+}
+
+.footer-submit-button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  transform: translateY(50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/svg/icon-send.svg");
+  margin-left: 10px;
 }
 
 /* the end */
