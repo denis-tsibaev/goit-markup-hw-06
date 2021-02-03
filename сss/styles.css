@@ -977,6 +977,7 @@ address {
 }
 
 .form-footer-label {
+  display: inline-block;
   margin-right: 12px;
 }
 
@@ -991,6 +992,11 @@ address {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-footer-input:focus {
+  border-color: var(--accent-color);
 }
 
 .footer-submit-button {
