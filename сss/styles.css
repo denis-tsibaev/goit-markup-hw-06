@@ -667,12 +667,14 @@ h2 {
 .member-sn-link:hover,
 .member-sn-link:focus {
   background-color: var(--accent-color);
-}
-
-.member-sn-link:hover .socialnet-icon,
-.member-sn-link:focus .socialnet-icon {
   fill: var(--white-color);
 }
+
+/* перенёс в .member-sn-link:hover для синхронности */
+/* .member-sn-link:hover .socialnet-icon,
+.member-sn-link:focus .socialnet-icon {
+  fill: var(--white-color);
+} */
 
 /* Галерея работ */
 .gallery {
